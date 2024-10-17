@@ -5,20 +5,20 @@
 class Hello < Formula
   desc ""
   homepage ""
-  version "2.0.5"
+  version "2.0.7"
 
   on_macos do
     on_intel do
-      url "https://github.com/Ladicle/gha-playground/releases/download/v2.0.5/gha-playground_Darwin_x86_64.tar.gz"
-      sha256 "c15e7fd7fa7629d547e9762d84702dff42b24674374cd8271f5b41a2f714352d"
+      url "https://github.com/Ladicle/gha-playground/releases/download/v2.0.7/gha-playground_Darwin_x86_64.tar.gz"
+      sha256 "7528918881b8d7e7c34d47df37b5eb24d183042719708cd1bbe89df3e0a10cf7"
 
       def install
         bin.install "hello"
       end
     end
     on_arm do
-      url "https://github.com/Ladicle/gha-playground/releases/download/v2.0.5/gha-playground_Darwin_arm64.tar.gz"
-      sha256 "0b77b933a5af07ed54f66d24754c3c303918a5ac21c8268e0e508423bd596b93"
+      url "https://github.com/Ladicle/gha-playground/releases/download/v2.0.7/gha-playground_Darwin_arm64.tar.gz"
+      sha256 "f3def7952b67d5a03c20f6dc5fefa565d204254527c48fcdadfb95d11f3fe80c"
 
       def install
         bin.install "hello"
@@ -29,8 +29,8 @@ class Hello < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Ladicle/gha-playground/releases/download/v2.0.5/gha-playground_Linux_x86_64.tar.gz"
-        sha256 "aebe0bd46fef5baba2000fb63d4160db303fe4671b89bc266d0cde08b05006ec"
+        url "https://github.com/Ladicle/gha-playground/releases/download/v2.0.7/gha-playground_Linux_x86_64.tar.gz"
+        sha256 "69c97269ab1f83bfbe46bb7bbffc6c2fa0b739e36dc170916350996aa3ea86b6"
 
         def install
           bin.install "hello"
@@ -39,8 +39,8 @@ class Hello < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Ladicle/gha-playground/releases/download/v2.0.5/gha-playground_Linux_arm64.tar.gz"
-        sha256 "225bbc5ca0beaa43eecdd81ec451cbe9ea2bf2213d0136d225977b33a1549ed5"
+        url "https://github.com/Ladicle/gha-playground/releases/download/v2.0.7/gha-playground_Linux_arm64.tar.gz"
+        sha256 "7eb90e118a48299c151a9053a65eaf217f6590b8181f9e54ca7903f02db8d4f3"
 
         def install
           bin.install "hello"
