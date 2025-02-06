@@ -5,20 +5,20 @@
 class Tcardgen < Formula
   desc ""
   homepage ""
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ladicle/tcardgen/releases/download/v0.5.0/tcardgen_Darwin_x86_64.tar.gz"
-      sha256 "5ba01c2c3b804d43178728cdd650ca867ae2b2106d18987645ba6fa27b3f71c5"
+      url "https://github.com/Ladicle/tcardgen/releases/download/v0.6.0/tcardgen_Darwin_x86_64.tar.gz"
+      sha256 "dae85e0adbd37b4a83b097ceebe3d5c29544ed05e5d21dc17630e10ec55d4277"
 
       def install
         bin.install "tcardgen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ladicle/tcardgen/releases/download/v0.5.0/tcardgen_Darwin_arm64.tar.gz"
-      sha256 "f631f39888cfc488c180177a691814eae6b2db91cd7171a14ac6c8b4ecd7d13c"
+      url "https://github.com/Ladicle/tcardgen/releases/download/v0.6.0/tcardgen_Darwin_arm64.tar.gz"
+      sha256 "93171ad7d644003df8b409d45b51e08c75a9cd6506b843ae3b3944a62c758970"
 
       def install
         bin.install "tcardgen"
@@ -29,8 +29,8 @@ class Tcardgen < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Ladicle/tcardgen/releases/download/v0.5.0/tcardgen_Linux_x86_64.tar.gz"
-        sha256 "52af5cabe7519e102d6968ef9fe01bdfd17a4812b4bb7bf7f8a1e6a66001ffe3"
+        url "https://github.com/Ladicle/tcardgen/releases/download/v0.6.0/tcardgen_Linux_x86_64.tar.gz"
+        sha256 "6f8b24265bc60bdcd6b1a0b6e0ee28283c735762ed4568ede308659707eff8e7"
 
         def install
           bin.install "tcardgen"
@@ -39,8 +39,8 @@ class Tcardgen < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Ladicle/tcardgen/releases/download/v0.5.0/tcardgen_Linux_arm64.tar.gz"
-        sha256 "317247fc5de103f6c23ae3183ef2f015e1cb82e4db7738bb7d3e64b01f9590f5"
+        url "https://github.com/Ladicle/tcardgen/releases/download/v0.6.0/tcardgen_Linux_arm64.tar.gz"
+        sha256 "7b45b0c65012079e7262d61a8e8d362d7aa2d6c6dec75a67087ccfe61b22ff06"
 
         def install
           bin.install "tcardgen"
