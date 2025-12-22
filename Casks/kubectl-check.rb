@@ -3,7 +3,7 @@ cask "kubectl-check" do
   name "kubectl-check"
   desc "A kubectl plugin to check the status of Kubernetes resources"
   homepage "https://github.com/Ladicle/kubectl-check"
-  version "1.3.0"
+  version "1.4.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -18,22 +18,22 @@ cask "kubectl-check" do
   on_macos do
     on_intel do
       url "https://github.com/Ladicle/kubectl-check/releases/download/v#{version}/kubectl-check_#{version}_darwin_amd64.tar.gz"
-      sha256 "dbc422291b3ef0a7d2b2c4fba51a7bcea5c240e761f5c05dcb0faeca1e323243"
+      sha256 "c5fe310b89e499c4e8181a8993d3fed3e138b55f5e6146be370c3fe1c09b44f0"
     end
     on_arm do
       url "https://github.com/Ladicle/kubectl-check/releases/download/v#{version}/kubectl-check_#{version}_darwin_arm64.tar.gz"
-      sha256 "306e7723b9b2142c5f9f417d5b239be0654294726f155264fb5030dff92db904"
+      sha256 "4361b53544b64b89149221481d4aaa172dd80542e54a41277e191e370a35752b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Ladicle/kubectl-check/releases/download/v#{version}/kubectl-check_#{version}_linux_amd64.tar.gz"
-      sha256 "fb38a595abf02b756a1471541824248729ecd615d2453bab27eeb6347e9bde29"
+      sha256 "9aeb0b8bdbabfa05afd2c13a69513ca39e78833346ae8a837e62832cfd262a86"
     end
     on_arm do
       url "https://github.com/Ladicle/kubectl-check/releases/download/v#{version}/kubectl-check_#{version}_linux_arm64.tar.gz"
-      sha256 "53b46d45546b04ae38d293f56592eb08587cacd773d61b78fdd1926a54c20ba3"
+      sha256 "b3169d99e64520a513c622583a047368d36debb09f59e11c78a43e607d7cb9fd"
     end
   end
 
